@@ -1,4 +1,6 @@
-# Program Overview
+# UGRP
+
+#Program overview
 This program can simulate ray dynamics in a micro-cavity consists of 3 partial ellipses.
 There are 5 output data files: boundary.dat, ray.dat, psos.dat, spd.dat and ffield.dat which means that with this program, we can draw **ray trajectory**, **poincare surface of section, survival probability distribution and far-field pattern.**
 Language: Fortran90
