@@ -17,7 +17,9 @@ quarter ellipse2: ((x-(1-g2))/g2)^2 + (y/g3)^2 = 1
 #Hyper parameter description
 There are **11 hyper parameters** including g1, g2 and g3.
 **g1, g2 and g3** are kind of deformation parameters related to the shape of each ellipse.
-**s_num and p_num** are parameters that determine initial position and angle of the ray dividing the coordinate of phase space.
+**s_num and p_num** are parameters that determine initial position and angle of the ray. 
+s_num is the number that divide 360 degree ex) s_num = 3 -> initial position: 120, 240, 360 in degree
+p_num is the number that divide value of sin (-1 to 1) ex) p_num = 4 -> sin(x) = -0.5, 0, 0.5 -> -30, 0, 30 in degree 
 **num** is the number of iterations of each ray.
 **n_i and n_t** are refraction index of microcavity and its surrounding respectively
 **row and col** are the number of grid of SPD.
@@ -37,7 +39,7 @@ When it comes to calculatation of 's' which is x-axis of phase space, the calcul
 I adopt trapezoidal rule to numerically caluculate the arc length integral.
 
 #Probelms 3
-PSOS and SPD are imperfect.
-I don't know the exact reasons but they show minor defects.
+PSOS are imperfect
+The section of quarter ellipse2 has more data than other sections. And some 's' values are slightly larger than 1 because of 's' calculation error 
 
 
